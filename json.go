@@ -32,8 +32,8 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	w.WriteHeader(code)
 
 	if _, err := w.Write(dat); err != nil {
-        // Intentionally ignoring write error (e.g. client disconnected).
-        // Optionally log in debug-only code.
-    }
+		// Intentionally ignoring write error (e.g. client disconnected).
+		// Optionally log in debug-only code.
+	}
 
 }
